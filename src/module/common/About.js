@@ -37,7 +37,7 @@ export default class About extends Component {
 					</Text>
 					<HtmlView
 						style={{marginTop: 8}}
-						html={'<p><a href="https://www.v2ex.com/mission">项目源码</a></p>'}
+						html={'<p><a href="https://github.com/999946/react-native-v2ex">项目源码</a></p>'}
 						onLinkPress={this.onLinkPress}
 					/>
 				</View>
