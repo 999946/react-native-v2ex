@@ -19,7 +19,7 @@
 - [ ] 查看个人信息
 
 # Build
-1. clone this repo
+1. git clone https://github.com/999946/react-native-v2ex.git
 2. npm install
 3. react-native run-android or react-native run-ios
 
