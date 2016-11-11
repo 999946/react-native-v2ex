@@ -1,7 +1,6 @@
 
 import { createStore , applyMiddleware , combineReducers } from 'redux';
 import thunk from 'redux-thunk';
-import promise from 'redux-promise';
 import createLogger from 'redux-logger';
 import reducers from 'v2ex/src/redux/Reducers';
 
