@@ -1,5 +1,4 @@
 import * as types from '../action/ActionTypes';
-import { handleActions } from 'redux-actions';
 
 const initialState = {
 	isLogined  : false,
