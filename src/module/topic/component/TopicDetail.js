@@ -82,14 +82,16 @@ class TopicDetail extends Component {
 		})
 	}
 	onRowPress = (rowData) => {
-		this.setState({
-			value : this.state.value + `@${rowData.member.username} `
-		});
+		this.at(rowData);
 		this.replyView.getInput().focus();
 	}
 	onAvatarLongPress = (rowData) => {
+		this.at(rowData);
+	}
+	at = (rowData) => {
+		const value = this.state.value == undefined ? '' : this.state.value
 		this.setState({
-			value : this.state.value + `@${rowData.member.username} `
+			value : value + `@${rowData.member.username} `
 		});
 	}
 	onThanksPress = (rowData) => {
