@@ -1,7 +1,7 @@
 # 使用react native开发的V2EX客户端
 
 > 由于个人喜欢在移动端浏览V2EX社区, 所以写的一个APP。
-  支持iphone、ipad、android。
+  支持iPad、iPhone、Android。
 
 # 截图
 ![index](./screenshots/index.png) ![user](./screenshots/user.png)
