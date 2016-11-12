@@ -20,8 +20,8 @@ class Login extends Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			loginId : 'sssdjiui',
-			password : 'sssdjiui1'
+			loginId : undefined,
+			password : undefined
 		}
 	}
 	componentDidMount(){

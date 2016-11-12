@@ -280,7 +280,7 @@ class TopicDetail extends Component {
 					}}
 					{...this.props}
 				/>
-				<Share ref={ref => this.share = ref} data={this.state.data}/>
+				<Share ref={ref => this.share = ref} data={this.props.detail}/>
 				<ReplyView 
 					ref={ref=>this.replyView = ref}
 					value={this.state.value}

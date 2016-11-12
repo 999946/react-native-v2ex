@@ -15,7 +15,8 @@ import * as userActions from 'v2ex/src/module/user/action/User';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-// import CustomImage from 'v2ex/src/module/common/CustomImage';
+import * as WechatAPI from 'react-native-wechat';
+
 import HtmlView from 'v2ex/src/widget/htmlView/HtmlView';
 import ImageGallery from 'v2ex/src/module/common/ImageGallery';
 
@@ -49,6 +50,7 @@ class Index extends Component {
 				this.props.actions.getUserInfo();
 			}
 		});
+		WechatAPI.registerApp('wxbdd0bf64f440b56f');
 	}
 	componentWillReceiveProps(nextProps){
 		if(nextProps.userToken != this.props.userToken){

@@ -12,17 +12,19 @@ export default class Share extends Component {
 		this.ActionSheet.show();
 	}
 	_share = (index) => {
-		if (index == 2) {
-			WechatAPI.shareToSession({
-				type: 'news',
-				title: '标题',
-				description: '描述',
-				webpageUrl: 'https://github.com/reactnativecn/react-native-wx',
-				imageUrl: 'http://www.ncloud.hk/email-signature-262x100.png'
-			});
-		}
-		if (index == 2) {
-			Clipboard.setString('https://github.com/reactnativecn/react-native-wx')
+		if(this.props.data){
+			if (index == 1) {
+				WechatAPI.shareToSession({
+					type: 'news',
+					title: this.props.data[0].title,
+					description: '',
+					webpageUrl: this.props.data[0].url,
+					imageUrl: this.props.data[0].member.avatar_normal
+				});
+			}
+			if (index == 2) {
+				Clipboard.setString(this.props.data.url)
+			}
 		}
 	}
 	render() {
